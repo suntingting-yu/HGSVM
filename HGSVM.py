@@ -246,6 +246,7 @@ class HyperSVM(object):
         new_K = self.opt['kernel_function'](self.X, X, **self.opt['kernel_parameters'])
         f = np.squeeze(np.array(self.alpha)).dot(new_K)
         return f + self.b
+    
 def rbf(X1, X2, **kwargs):
     return np.exp(-cdist(X1, X2) ** 2 * kwargs['gamma'])
 
