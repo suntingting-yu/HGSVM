@@ -42,7 +42,7 @@ class HyperSVM(object):
         return W
 
     def GetRawWeightByAffinity(self, AMatrix, AttMat):
-        # Generating the raw weights of hyperedges via using the affinity matrix  可以修改权重公式的
+        # Generating the raw weights of hyperedges via using the affinity matrix  
         print('------------------------------------------------------------------------')
         print('Generating the raw weights of hyperedges via using the affinity matrix')
         (row, col) = AttMat.shape
